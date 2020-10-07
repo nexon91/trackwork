@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="text-center position-relative">
+        {{ form_start(addForm) }}
+        {# Seleziona Via #}
+            {{ form_row(addForm.via)  }}
+        {#  Seleziona Giorno #}
+            {{ form_row(addForm.giorno)  }}
+
+            {{ form_row(addForm.aggiungi) }}
+        {{ form_end(addForm) }}
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
